@@ -1,0 +1,7 @@
+{
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\build\\compile_commands.json",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "myrrhe-1",
+        "projectKey": "Myrrhe_segment-1"
+    }
+}
