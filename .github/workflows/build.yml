@@ -15,12 +15,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Set up environment
+        run: |
+          $env:INCLUDE = "C:\Program Files (x86)\SFML\include;$env:INCLUDE"
+          $env:LIB = "C:\Program Files (x86)\SFML\lib;$env:LIB"
       - name: Install sonar-scanner and build-wrapper
         uses: SonarSource/sonarcloud-github-c-cpp@v2
       - name: Run build-wrapper
         run: |
           New-Item -ItemType directory -Path build_sonar
-          cmake -S . -B build_sonar
+          cmake -S . -B build_sonar -DCMAKE_PREFIX_PATH="C:\Program Files (x86)\SFML"
           build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} cmake --build build_sonar/ --config Release
       - name: Run sonar-scanner
         env:
