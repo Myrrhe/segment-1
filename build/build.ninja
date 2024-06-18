@@ -57,6 +57,206 @@ build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/U
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
 
+build CMakeFiles/main.dir/src/Component.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Component.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Component.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/ComponentArray.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/ComponentArray.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\ComponentArray.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/ComponentManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/ComponentManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\ComponentManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/ComponentType.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/ComponentType.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\ComponentType.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Components/Renderable.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Components/Renderable.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Components\Renderable.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src\Components
+
+build CMakeFiles/main.dir/src/Coordinator.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Coordinator.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Coordinator.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Engine.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Engine.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Engine.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Entity.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Entity.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Entity.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/EntityManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/EntityManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\EntityManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Func.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Func.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Func.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Global.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Global.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Global.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/IComponentArray.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/IComponentArray.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\IComponentArray.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Input.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Input.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Input.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/InputManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/InputManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\InputManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/MouseWheel.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/MouseWheel.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\MouseWheel.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/OsManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/OsManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\OsManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/PathManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/PathManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\PathManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Quaternion.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Quaternion.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Quaternion.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Signature.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Signature.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Signature.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/StaticObject.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/StaticObject.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\StaticObject.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/System.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/System.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\System.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/SystemManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/SystemManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\SystemManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
+build CMakeFiles/main.dir/src/Systems/GraphicsSystem.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Systems/GraphicsSystem.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Systems\GraphicsSystem.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src\Systems
+
+build CMakeFiles/main.dir/src/Systems/RenderSystem.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/Systems/RenderSystem.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\Systems\RenderSystem.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src\Systems
+
+build CMakeFiles/main.dir/src/WindowManager.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/thoma/aston-workspace/segment-1/src/WindowManager.cpp || cmake_object_order_depends_target_main
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\main.dir\src\WindowManager.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -I"C:/Program Files (x86)/SFML/include" -IC:/Users/thoma/aston-workspace/segment-1/include
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -65,7 +265,7 @@ build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/U
 #############################################
 # Link the executable main.exe
 
-build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj CMakeFiles/main.dir/src/Component.cpp.obj CMakeFiles/main.dir/src/ComponentArray.cpp.obj CMakeFiles/main.dir/src/ComponentManager.cpp.obj CMakeFiles/main.dir/src/ComponentType.cpp.obj CMakeFiles/main.dir/src/Components/Renderable.cpp.obj CMakeFiles/main.dir/src/Coordinator.cpp.obj CMakeFiles/main.dir/src/Engine.cpp.obj CMakeFiles/main.dir/src/Entity.cpp.obj CMakeFiles/main.dir/src/EntityManager.cpp.obj CMakeFiles/main.dir/src/Func.cpp.obj CMakeFiles/main.dir/src/Global.cpp.obj CMakeFiles/main.dir/src/IComponentArray.cpp.obj CMakeFiles/main.dir/src/Input.cpp.obj CMakeFiles/main.dir/src/InputManager.cpp.obj CMakeFiles/main.dir/src/MouseWheel.cpp.obj CMakeFiles/main.dir/src/OsManager.cpp.obj CMakeFiles/main.dir/src/PathManager.cpp.obj CMakeFiles/main.dir/src/Quaternion.cpp.obj CMakeFiles/main.dir/src/Signature.cpp.obj CMakeFiles/main.dir/src/StaticObject.cpp.obj CMakeFiles/main.dir/src/System.cpp.obj CMakeFiles/main.dir/src/SystemManager.cpp.obj CMakeFiles/main.dir/src/Systems/GraphicsSystem.cpp.obj CMakeFiles/main.dir/src/Systems/RenderSystem.cpp.obj CMakeFiles/main.dir/src/WindowManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lsfml-network-s  -lsfml-audio-s  -lsfml-graphics-s  -lsfml-window-s  -lsfml-system-s  -lws2_32  -lopenal32  -lflac  -lvorbisenc  -lvorbisfile  -lvorbis  -logg  -lfreetype  -lopengl32  -lgdi32  -lwinmm  -lpsapi  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/PROGRA~2/SFML/lib

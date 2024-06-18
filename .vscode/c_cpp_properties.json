@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                // "C:/Users/thoma/aston-workspace/segment-1/include",
+                "C:/Program Files (x86)/SFML/include",
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            // "compilerPath": "C:\\MinGW\\bin\\g++.exe",
+            "compilerPath": "C:/msys64/mingw64/bin/c++.exe",
+            "cStandard": "gnu17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

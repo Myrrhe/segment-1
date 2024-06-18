@@ -1,25 +1,24 @@
 #include <SFML/Graphics.hpp>
+#include "Engine.hpp"
+#include "Input.hpp"
+#include "InputManager.hpp"
+#include "MouseWheel.hpp"
+#include "OsManager.hpp"
+#include "PathManager.hpp"
+#include "WindowManager.hpp"
 
-
-int main()
+int main(int /*argc*/, char **argv, char ** /*options*/)
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-
+    WindowManager::create();
+    OsManager::initiateCoreFile();
+    PathManager::setPath(argv[0]);
+    PathManager::initialize();
+    WindowManager::getMonitorSize();
+    WindowManager::initialize();
+    MouseWheel::initialize();
+    Input::initialize();
+    InputManager::initialize();
+    Engine::launch();
+    WindowManager::terminate();
     return 0;
 }
