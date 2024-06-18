@@ -22,7 +22,6 @@ public:
 
     template <typename T>
     static void allocate(std::size_t n) {
-        // T::instances = std::make_unique<std::vector<T*>>();
         T::m_systems.reserve(n);
     }
 

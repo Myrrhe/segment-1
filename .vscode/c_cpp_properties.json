@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                // "C:/Users/thoma/aston-workspace/segment-1/include",
+                "C:/Users/thoma/aston-workspace/segment-1/include",
                 "C:/Program Files (x86)/SFML/include",
                 "${workspaceFolder}/include"
             ],
