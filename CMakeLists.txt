@@ -25,6 +25,10 @@ target_include_directories(main PUBLIC
 target_link_directories(main PUBLIC "C:/Program Files (x86)/SFML/lib")
 add_compile_definitions(SFML_STATIC)
 
+include_directories("C:/Program Files (x86)/SFML/include")
+
+link_directories("C:/Program Files (x86)/SFML/lib")
+
 target_link_libraries(main sfml-network-s)
 target_link_libraries(main sfml-audio-s)
 target_link_libraries(main sfml-graphics-s)
