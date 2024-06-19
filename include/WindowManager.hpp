@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <array>
+#include <memory>
 #include <stack>
 #include <string>
 #include <vector>
@@ -67,7 +68,7 @@ public:
     static const bool Fullscreen;
 
 private:
-    static sf::RenderWindow *renderWindow;
+    static std::unique_ptr<sf::RenderWindow> renderWindow;
     static sf::Texture *textureIcon;
 
     static std::array<sf::View, 4> views;

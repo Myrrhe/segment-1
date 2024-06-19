@@ -24,7 +24,7 @@
 #include <iostream>
 #include <istream>
 
-sf::RenderWindow *WindowManager::renderWindow;
+std::unique_ptr<sf::RenderWindow> WindowManager::renderWindow;
 sf::Texture *WindowManager::textureIcon;
 
 std::array<sf::View, 4> WindowManager::views;
@@ -65,7 +65,7 @@ void WindowManager::getMonitorSize()
 
 void WindowManager::create()
 {
-    (renderWindow = new sf::RenderWindow)->create(sf::VideoMode(Width, Height, 32u), "", sf::Style::Titlebar | sf::Style::Close, sf::ContextSettings(0, 0, 0, 1u, 1u, sf::ContextSettings::Attribute::Default, false));
+    (renderWindow = std::make_unique<sf::RenderWindow>())->create(sf::VideoMode(Width, Height, 32u), "", sf::Style::Titlebar | sf::Style::Close, sf::ContextSettings(0, 0, 0, 1u, 1u, sf::ContextSettings::Attribute::Default, false));
     stateView.push(IdView::MAIN);
     setViewTarget(*renderWindow);
 }
@@ -92,7 +92,7 @@ void WindowManager::initialize()
 
 void WindowManager::terminate()
 {
-    delete renderWindow;
+    // Nothing to delete
 }
 
 void WindowManager::pushStateView(IdView idView)
@@ -110,55 +110,55 @@ void WindowManager::setViewTarget(sf::RenderTarget &renderTarget)
     sf::Vector2<unsigned int> sizeTarget = renderTarget.getSize();
     switch (stateView.top())
     {
-    case IdView::MAIN:
-    {
-        mainScale = std::min(static_cast<float>(sizeTarget.x) / static_cast<float>(Width), static_cast<float>(sizeTarget.y) / static_cast<float>(Height));
-        auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
-        auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
-        views[0].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
-        views[0].setViewport(sf::Rect<float>((rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
-                                             (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY,
-                                             1.0f - 2.0f * (rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
-                                             1.0f - 2.0f * (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY));
-        renderTarget.setView(views[0]);
-        break;
-    }
-    case IdView::UI:
-    {
-        auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
-        auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
-        views[1].reset(sf::Rect<float>(uiX, uiY, uiWidth, uiHeight));
-        views[1].setViewport(sf::Rect<float>(((rendingSizeX - Width * mainScale) * 0.5f + uiX * mainScale) / rendingSizeX,
-                                             ((rendingSizeY - Height * mainScale) * 0.5f + uiY * mainScale) / rendingSizeY,
-                                             uiWidth * mainScale / rendingSizeX,
-                                             uiHeight * mainScale / rendingSizeY));
-        renderTarget.setView(views[1]);
-        break;
-    }
-    case IdView::SHAKE:
-    {
-        mainScale = std::min(static_cast<float>(sizeTarget.x) / static_cast<float>(Width), static_cast<float>(sizeTarget.y) / static_cast<float>(Height));
-        auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
-        auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
-        views[2].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
-        views[2].setViewport(sf::Rect<float>((rendingSizeX - (Width + 2.0f * offsetX) * mainScale) * 0.5f / rendingSizeX,
-                                             (rendingSizeY - (Height + 2.0f * offsetY) * mainScale) * 0.5f / rendingSizeY,
-                                             1.0f - 2.0f * (rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
-                                             1.0f - 2.0f * (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY));
-        renderTarget.setView(views[2]);
-        break;
-    }
-    case IdView::WHOLE:
-    {
-        views[3].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
-        views[3].setViewport(sf::Rect<float>(0.0f, 0.0f, 1.0f, 1.0f));
-        renderTarget.setView(views[3]);
-        break;
-    }
-    default:
-    {
-        break;
-    }
+        case IdView::MAIN:
+        {
+            mainScale = std::min(static_cast<float>(sizeTarget.x) / static_cast<float>(Width), static_cast<float>(sizeTarget.y) / static_cast<float>(Height));
+            auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
+            auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
+            views[0].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
+            views[0].setViewport(sf::Rect<float>((rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
+                                                (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY,
+                                                1.0f - 2.0f * (rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
+                                                1.0f - 2.0f * (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY));
+            renderTarget.setView(views[0]);
+            break;
+        }
+        case IdView::UI:
+        {
+            auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
+            auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
+            views[1].reset(sf::Rect<float>(uiX, uiY, uiWidth, uiHeight));
+            views[1].setViewport(sf::Rect<float>(((rendingSizeX - Width * mainScale) * 0.5f + uiX * mainScale) / rendingSizeX,
+                                                ((rendingSizeY - Height * mainScale) * 0.5f + uiY * mainScale) / rendingSizeY,
+                                                uiWidth * mainScale / rendingSizeX,
+                                                uiHeight * mainScale / rendingSizeY));
+            renderTarget.setView(views[1]);
+            break;
+        }
+        case IdView::SHAKE:
+        {
+            mainScale = std::min(static_cast<float>(sizeTarget.x) / static_cast<float>(Width), static_cast<float>(sizeTarget.y) / static_cast<float>(Height));
+            auto rendingSizeX = static_cast<float>(Fullscreen ? monitorSize.x : sizeTarget.x);
+            auto rendingSizeY = static_cast<float>(Fullscreen ? monitorSize.y : sizeTarget.y);
+            views[2].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
+            views[2].setViewport(sf::Rect<float>((rendingSizeX - (Width + 2.0f * offsetX) * mainScale) * 0.5f / rendingSizeX,
+                                                (rendingSizeY - (Height + 2.0f * offsetY) * mainScale) * 0.5f / rendingSizeY,
+                                                1.0f - 2.0f * (rendingSizeX - Width * mainScale) * 0.5f / rendingSizeX,
+                                                1.0f - 2.0f * (rendingSizeY - Height * mainScale) * 0.5f / rendingSizeY));
+            renderTarget.setView(views[2]);
+            break;
+        }
+        case IdView::WHOLE:
+        {
+            views[3].reset(sf::Rect<float>(0.0f, 0.0f, Width, Height));
+            views[3].setViewport(sf::Rect<float>(0.0f, 0.0f, 1.0f, 1.0f));
+            renderTarget.setView(views[3]);
+            break;
+        }
+        default:
+        {
+            break;
+        }
     }
 }
 
@@ -265,7 +265,7 @@ sf::Vector2<float> WindowManager::mapPixelToCoords(const sf::Vector2<int> &point
 
 sf::RenderWindow *WindowManager::getRenderWindow()
 {
-    return renderWindow;
+    return renderWindow.get();
 }
 
 bool WindowManager::isTextEntered()
